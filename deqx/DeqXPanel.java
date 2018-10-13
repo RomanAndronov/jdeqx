@@ -126,10 +126,12 @@ class DeqXPanel
 
 			handleClues( CMD_HIDE_CLUES );
 			srcSqr.clear();
-			srcSqr.setRegularTextColor();
 			nextNumber--;
-			lastSelectedSquare.setLastSelectedTextColor();
 			lastSelectedSquare = lss;
+			if ( lastSelectedSquare != null )
+			{
+				lastSelectedSquare.setLastSelectedTextColor();
+			}
 			if ( chkbShowClues.isSelected() )
 			{
 				handleClues( CMD_SHOW_CLUES );

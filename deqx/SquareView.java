@@ -158,6 +158,7 @@ class SquareView
 	clear()
 	{
 		setText( "" );
+		setForeground( txtClr );
 		setBackground( SQUARE_CLR );
 	}
 
